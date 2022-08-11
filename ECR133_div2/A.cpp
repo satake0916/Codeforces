@@ -23,15 +23,25 @@
 #include<chrono>
 using namespace std;
 using ll = long long;
+
 #define pb push_back
 #define eb emplace_back
 #define fi first
 #define se second
 
-void solve(){
-}
-
 int main(){
-	int T; cin >> T;
-	while(T--) solve();
+	int T;
+	cin >> T;
+	while(T--){
+		int n;
+		cin >> n;
+		int ans = -1;
+		if(n == 1){
+			cout << 2 << endl;
+			continue;
+		}
+		int rest = n % 6;
+		int sho = n / 6;
+		cout << sho * 2 + (rest+2)/3 << endl;
+	}
 }
