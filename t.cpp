@@ -28,10 +28,5 @@ using ll = long long;
 #define fi first
 #define se second
 
-void solve(){
-}
-
 int main(){
-	int T; cin >> T;
-	while(T--) solve();
 }
